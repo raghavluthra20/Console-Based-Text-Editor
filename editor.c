@@ -11,7 +11,7 @@ void editFile();         // function to open a file, edit its contents and save 
 void saveAs();           // function to open a file and save it with different name, keeping original file intact.
 void Ctrl_F();           // function to search for a given word/pattern in a file.
 void compareFiles();     // function to compare two file and check whether they are exactly similar or not.
-void del();           // function to delete a file.
+void del();              // function to delete a file.
 void replaceLine();      // helper function for editFile() to replace a given line in given file
 void appendLine();       // helper function for editFile() to append line(s) at the end of given file
 void deleteLine();       // helper function for editFile() to delete a given line in given file
