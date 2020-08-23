@@ -367,13 +367,13 @@ void Ctrl_F() {
 	int count = 0, current_line = 0;
 	printf("<Search results:>\n");
     while(fgets(line_content, 79, fp) != NULL) {
-    	for(int i=0; i<strlen(line_content); i++) {
+    	for(int i = 0; i < strlen(line_content); i++) {
 			bool found = 0;
 			if(line_content[i] == search[0]) {    // if current letter in file matches first letter of search then start looking whether next few letters also match or not
 				found = 1;
-				for(int j=1; j<strlen(search); j++) {    // now we loop through the remaining letters in search word
+				for(int j = 1; j < strlen(search); j++) {    // now we loop through the remaining letters in search word
 					if(search[j] != line_content[i+j]){
-						found=0;
+						found = 0;
 						break;    // if current letter does not match with corresponding letter in search, break the loop and found=0
 					}
 				}
